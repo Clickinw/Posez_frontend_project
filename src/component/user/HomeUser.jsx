@@ -12,7 +12,7 @@ export default function HomeUser() {
         </div>
 
         <div className="flex flex-col w-full h-full justify-center content-center items-center">
-          <button className="my-2 w-[75%] h-[10rem] bg-[#CE3434] hover:bg-[#8D201A] flex  justify-center items-center rounded-md shadow-xl shadow-gray-300">
+          <button className="my-2 w-[75%] h-[8rem] bg-[#CE3434] hover:bg-[#8D201A] flex  justify-center items-center rounded-md shadow-xl shadow-gray-300">
             <div className="bg-white rounded-full w-[60px] h-[60px] flex justify-center itmes-center">
               <div className="mt-[0.4rem]">
                 <svg
@@ -39,7 +39,7 @@ export default function HomeUser() {
             <div className="pl-2 text-[1.5rem] text-white">รับที่ร้าน</div>
           </button>
 
-          <button className="my-2 w-[75%] h-[10rem] bg-[#ED7072] hover:bg-[#EBA78A] flex  justify-center items-center rounded-md shadow-xl shadow-gray-300">
+          <button className="my-2 w-[75%] h-[8rem] bg-[#ED7072] hover:bg-[#EBA78A] flex  justify-center items-center rounded-md shadow-xl shadow-gray-300">
             <div className="bg-white rounded-full w-[60px] h-[60px] flex justify-center itmes-center">
               <div className="mt-[0.4rem]">
                 <svg
