@@ -1,20 +1,20 @@
-import React from "react";
-import cardList from "../../api/data";
+import React from 'react';
+import cardList from '../../api/data';
 
 export default function Menu() {
   return (
     <fragment>
-      <div className="container mx-auto py-36 px-8">
+      <div className='container mx-auto py-36 px-8'>
         <div>
-          <h3 className="text-4xl text-[#3C4048]">เมนู</h3>
+          <h3 className='text-4xl text-[#3C4048]'>เมนู</h3>
         </div>
-        <div className="grid lg:grid-cols-3 gap-6">
+        <div className='grid lg:grid-cols-3 gap-6'>
           {cardList.map((card) => (
-            <div className="shadow-lg rounded-lg">
-              <img className="rounded-t-lg" src="{card.images}" alt="" />
-              <div className="p-5">
-                <h5 className="text-xl text-[#3C4048]">{card.title}</h5>
-                <h6 className="text-lg text-[#3C4048]">ราคา: {card.price}</h6>
+            <div className='shadow-lg rounded-lg'>
+              <img className='rounded-t-lg' src={card.images} alt='' />
+              <div className='p-5'>
+                <h5 className='text-xl text-[#3C4048]'>{card.title}</h5>
+                <h6 className='text-lg text-[#3C4048]'>ราคา: {card.price}</h6>
               </div>
             </div>
           ))}
