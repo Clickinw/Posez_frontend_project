@@ -8,8 +8,8 @@ export default function HomeUser() {
           <img src='src\assets\PosezFinal.png' alt='' />
         </div>
 
-        <div className='flex flex-col w-full h-full justify-center content-center items-center'>
-          <button className='my-2 w-[75%] h-[10rem] bg-[#CE3434] hover:bg-[#8D201A] flex  justify-center items-center rounded-md shadow-xl shadow-gray-300'>
+        <div className='flex flex-col w-full h-full justify-center content-center items-center mt-20'>
+          <button className='my-2 w-[75%] h-[10rem] bg-[#CE3434] hover:bg-[#8D201A] flex  justify-center items-center rounded-md shadow-xl shadow-gray-300 mb-3'>
             <div className='bg-white rounded-full w-[60px] h-[60px] flex justify-center itmes-center'>
               <div className='mt-[0.4rem]'>
                 <svg
