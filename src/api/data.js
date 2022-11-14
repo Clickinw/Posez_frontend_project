@@ -2,7 +2,7 @@
 export default [
     {
         id: 1,
-        images: './images/ต้มยำกุ้ง',
+        images: 'https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5nTwNdsQrFMZz5CbMuzPGOK6dxfOsIpafSp156o7wKpksPublC8.jpg',
         title: 'ต้มยำกุ้ง',
         price: '89',
 
