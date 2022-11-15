@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       {/* <HomeUser /> */}
-      <Menu />
-      {/* <List /> */}
+      {/* <Menu /> */}
+      <List />
     </>
   );
 }
