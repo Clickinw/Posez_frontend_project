@@ -67,15 +67,15 @@ export default function List() {
             <div className="mt-3">
               <button
                 type="submit"
-                className="m-3 bg-[#ED7072] hover:bg-[#EBA78A] rounded-md shadow-xl shadow-gray-300 mb-3 w-[15%] h-[2rem]"
+                className="m-3 bg-[#ED7072] hover:bg-[#EBA78A] rounded-md shadow-xl shadow-gray-300 mb-3 w-[20%] h-[2rem]"
               >
                 ย้อนกลับ
               </button>
               <button
                 type="submit"
-                className="m-3 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 mb-3 w-[15%] h-[2rem]"
+                className="m-3 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 mb-3 w-[20%] h-[2rem]"
               >
-                ส่ง
+                ยืนยันออเดอร์
               </button>
             </div>
           </div>
