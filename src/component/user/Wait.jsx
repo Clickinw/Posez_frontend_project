@@ -23,7 +23,7 @@ export default function Wait() {
                   />
                 </div>
 
-                <h5 className="text-4xl mt-3 text-[#3C4048] ">กำลังทำอาหาร</h5>
+                <h5 className="text-3xl mt-3 text-[#3C4048] ">กำลังทำอาหาร</h5>
               </div>
             </div>
             {/* </div> */}
