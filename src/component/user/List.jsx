@@ -34,6 +34,15 @@ export default function List() {
                   </div>
                 </div>
               ))}
+              <div className="grid grid-cols-2 justify-center content-center align-center m-3 text-xl text-[#3C4048]">
+                <div className="grid justify-end content-end align-end me-2 underline underline-offset-2">
+                  รวม:{" "}
+                </div>
+                <div className="grid justify-start content-start align-start mx-2">
+                  {" "}
+                  xxx บาท
+                </div>
+              </div>
             </div>
           </div>
           <div className="mt-3">
