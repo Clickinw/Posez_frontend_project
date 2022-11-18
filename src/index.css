@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* :root {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -27,17 +28,17 @@ a:hover {
 } */
 
 body {
-  margin: 0;
+  /* margin: 0;
   display: flex;
-  place-items: center;
+  place-items: center; */
   /* min-width: 20rem;
   min-height: 100vh; */
 }
 
-h1 {
+/* h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
+} */
 
 button {
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -57,7 +58,7 @@ button:focus-visible {
   /* outline: 4px auto -webkit-focus-ring-color; */
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -68,17 +69,17 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
-.margin-bottom-10rem{
+/* .margin-bottom-10rem{
   margin-bottom: 10rem;
 }
 .margin-top-10rem{
   margin-top: 15rem;
-}
+} */
 
 
-.btn-ED7072 {
+/* .btn-ED7072 {
   background-color: #ED7072;
 }
 .btn-ED7072:hover{
@@ -92,8 +93,8 @@ button:focus-visible {
     line-height: 2.5rem;
     display: inline-block;
     /* text-align: center; */
-    border-radius: 50%;
+    /* border-radius: 50%;
     border: 0.063rem solid #ffffff;
     margin: 0 0.5rem;
-    background-color: #ffffff;
-}
+    background-color: #ffffff; */
+/* }  */
