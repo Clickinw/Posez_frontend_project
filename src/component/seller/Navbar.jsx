@@ -37,7 +37,7 @@ export default function Navbar() {
             />
           </div>
           <ul className="">
-            <li className="text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-[#8D201A] rounded-md mt-2 mr-4">
+            <li className="text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-[#8D201A] rounded-md mt-2 mr-4 border-b">
               <span className="text-2xl block duration-200">
                 <BsPersonCircle />
               </span>
@@ -46,7 +46,7 @@ export default function Navbar() {
                   !open && "hidden"
                 }`}
               >
-                Johb Doe
+                John Doe
               </span>
             </li>
           </ul>
@@ -55,7 +55,7 @@ export default function Navbar() {
               <>
                 <li
                   key={index}
-                  className="text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-[#8D201A] rounded-md mt-2 mr-4"
+                  className="text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-[#8D201A] rounded-md mt-2 mr-4 border-b"
                 >
                   <span className="text-2xl block duration-200">
                     {menu.icon ? menu.icon : <RiDashboardFill />}
