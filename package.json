@@ -13,7 +13,6 @@
     "@mantine/core": "^5.8.0",
     "@mantine/hooks": "^5.8.0",
     "@material-tailwind/react": "^1.2.4",
-    "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.10.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

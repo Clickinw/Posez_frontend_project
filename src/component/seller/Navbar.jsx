@@ -19,16 +19,7 @@ export default function Navbar() {
   return (
     <fragment>
       <div className="flex">
-        <div
-          className={`h-screen  bg-[#AE2C26] shadow 
-          ${open ? "w-60" : "w-20"} duration-300 relative`}
-        >
-          <BsArrowLeftShort
-            className={`bg-white mt-2 text-[#3C4048] text-3xl rounded-full absolute -right-3 top-9 border border-[#AE2C26] cursor-pointer ${
-              open && "rotate-180"
-            } `}
-            onClick={() => setOpen(!open)}
-          />
+        <div className={`h-screen bg-[#AE2C26] shadow w-[50%] relative`}>
           <div className="flex justify-center content-center align-center">
             <img
               className={`w-[80%] cursor-pointer block float-left duration-200`}
@@ -36,15 +27,14 @@ export default function Navbar() {
               alt=""
             />
           </div>
-          <ul className="">
-            <li className="text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-[#8D201A] rounded-md mt-2 mr-4 border-b">
+          <ul className="mb-5">
+            <li className="text-white text-sm flex items-center gap-x-4 cursor-pointer hover:bg-[#8D201A] rounded-md mt-2 p-2  border-b">
               <span className="text-2xl block duration-200">
                 <BsPersonCircle />
               </span>
               <span
-                className={`text-base font-medium flex-1 duration-200 ${
-                  !open && "hidden"
-                }`}
+                className={`text-base font-medium flex-1
+            `}
               >
                 John Doe
               </span>
@@ -55,16 +45,12 @@ export default function Navbar() {
               <>
                 <li
                   key={index}
-                  className="text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-[#8D201A] rounded-md mt-2 mr-4 border-b"
+                  className="text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-[#8D201A] rounded-md mt-2 border-b"
                 >
-                  <span className="text-2xl block duration-200">
+                  <span className="text-lg block">
                     {menu.icon ? menu.icon : <RiDashboardFill />}
                   </span>
-                  <span
-                    className={`text-base font-medium flex-1 duration-200 ${
-                      !open && "hidden"
-                    }`}
-                  >
+                  <span className={`text-base font-medium flex-1`}>
                     {menu.title}
                   </span>
                 </li>
