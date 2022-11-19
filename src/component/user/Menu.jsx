@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import cardList from "../../api/data";
-import Select from "react-select";
+import Select1 from "../Select1";
 
 export default function Menu() {
   const [counter, setCounter] = useState(0);
@@ -15,18 +15,10 @@ export default function Menu() {
     setCounter((count) => count - 1);
   };
 
-  const options = [
-    { value: "ไข่ดาว", label: "ไข่ดาว" },
-    { value: "ไข่เจียว", label: "ไข่เจียว" },
-    { value: "ไข่ต้ม", label: "ไข่ต้ม" },
-    { value: "เพิ่มหมู", label: "เพิ่มหมู" },
-    { value: "เพิ่มเนื้อ", label: "เพิ่มเนื้อ" },
-  ];
-
   return (
     <fragment>
       <div className="mb-4 flex justify-center content-center align-center">
-        <img className="w-[30%]" src="src\assets\PosezFinal.png" alt="" />
+        <img className="w-1/4" src="src\assets\PosezFinal.png" alt="" />
       </div>
       <div className="container  px-8">
         <div>
@@ -37,7 +29,7 @@ export default function Menu() {
             <div className="shadow-lg rounded-lg">
               <div className="flex justify-center content-center align-center">
                 <img
-                  className="mt-3 rounded-lg w-[80%] h-[8rem]"
+                  className="mt-3 rounded-lg w-4/5 h-[8rem]"
                   src={card.images}
                   alt=""
                 />
@@ -95,15 +87,8 @@ export default function Menu() {
                 </div>
               </div>
               <div className="mt-3 grid justify-center content-center align-center'">
-                <div className="w-max">
-                  <Select
-                    defaultValue={[options[2], options[3]]}
-                    isMulti
-                    name="options"
-                    options={options}
-                    className="basic-multi-select w-[100%] text-[#3C4048]"
-                    classNamePrefix="เพิ่มเติม..."
-                  />
+                <div className="flex w-full">
+                  <Select1 />
                 </div>
               </div>
               <div>
