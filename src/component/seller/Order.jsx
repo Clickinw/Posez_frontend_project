@@ -24,11 +24,7 @@ export default function Order() {
   return (
     <fragment>
       <div className="flex">
-        <div>
-          <Navbar />
-        </div>
-
-        <div className="pl-96 grid lg:grid-cols-1 md:grid-cols-1 grid-cols-1">
+        <div className="grid lg:grid-cols-1 md:grid-cols-1 grid-cols-1">
           <div className="">
             <h3 className="text-2xl mb-5 mt-5 text-[#3C4048]">
               ออเดอร์ปัจจุบัน
