@@ -89,7 +89,7 @@ export default function Order() {
                         <div className="mt-1 mr-2">
                           <FiCheckCircle />
                         </div>
-                        <div>Success Order</div>
+                        <div>สำเร็จ</div>
                       </div>
                     </button>
                   </div>
@@ -154,7 +154,7 @@ export default function Order() {
                         <div className="mt-1 mr-2">
                           <FiCheckCircle />
                         </div>
-                        <div>Success Order</div>
+                        <div>สำเร็จ</div>
                       </div>
                     </button>
                   </div>
@@ -219,7 +219,7 @@ export default function Order() {
                         <div className="mt-1 mr-2">
                           <FiCheckCircle />
                         </div>
-                        <div>Success Order</div>
+                        <div>สำเร็จ</div>
                       </div>
                     </button>
                   </div>

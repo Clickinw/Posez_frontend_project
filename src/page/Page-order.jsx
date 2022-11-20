@@ -5,7 +5,7 @@ import Navbar from "../component/seller/Navbar";
 export default function PageOrder() {
   return (
     <fragment>
-      <div className="flex">
+      <div className="flex ">
         <div className="pr-96">
           <Navbar />
         </div>
