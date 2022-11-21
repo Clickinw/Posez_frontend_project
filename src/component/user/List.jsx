@@ -26,13 +26,13 @@ export default function List() {
                   </div>
                 </div>
                 {data.map((data) => (
-                  <div className="px-10 text-[#3C4048]">
+                  <div className="px-10 text-[#3C4048] mt-1">
                     <div className="grid grid-cols-5 gap-4 mb-2">
-                      <div className="text-start">{data.title}</div>
+                      <sapn className="text-start">{data.title}</sapn>
                       <span className="text-center">-</span>
-                      <div className="text-center"></div>
-                      <div className="text-center">{data.price}</div>
-                      <div className="text-center">-</div>
+                      <span className="text-center"></span>
+                      <sapn className="text-center">{data.price}</sapn>
+                      <span className="text-center">-</span>
                     </div>
                   </div>
                 ))}

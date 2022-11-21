@@ -6,7 +6,7 @@ export default function PageOrder() {
   return (
     <fragment>
       <div className="flex">
-        <div className="pr-80 hidden sm:block">
+        <div className="pr-[30rem] hidden sm:block">
           <Navbar />
         </div>
         <div className="p-5">
