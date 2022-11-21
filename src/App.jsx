@@ -5,6 +5,7 @@ import HomeUser from "./component/user/HomeUser";
 import Menu from "./component/user/Menu";
 import List from "./component/user/List";
 import Wait from "./component/user/Wait";
+import Success from "./component/user/Success";
 import Payment from "./component/user/Payment";
 import Modal from "./component/user/Modal";
 import Takeaway from "./component/user/Takeaway";
@@ -27,6 +28,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/list" element={<List />} />
         <Route path="/Wait" element={<Wait />} />
+        <Route path="/Success" element={<Success />} />
         <Route path="/Payment" element={<Payment />} />
 
         <Route path="*" element={<NotFound />} />
