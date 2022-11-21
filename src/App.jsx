@@ -7,12 +7,14 @@ import HomeUser from "./component/user/HomeUser";
 // import List from "./component/user/List";
 // import Wait from "./component/user/Wait";
 // import Payment from "./component/user/Payment";
-import Modal from "./component/user/Modal";
-import Takeaway from "./component/user/Takeaway";
-import Res from "./component/user/Res";
-import Navbar from "./component/seller/Navbar";
-import Order from "./component/seller/Order";
-import Select1 from "./component/Select1";
+// import Modal from "./component/user/Modal";
+// import Takeaway from "./component/user/Takeaway";
+// import Res from "./component/user/Res";
+// import Navbar from "./component/seller/Navbar";
+// import Order from "./component/seller/Order";
+// import Select1 from "./component/Select1";
+import PageOrder from "./page/Page-order";
+
 // import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -30,8 +32,9 @@ function App() {
       {/* <Takeaway /> */}
       {/* <Res /> */}
       {/* <Navbar /> */}
-      <Order />
+      {/* <Order /> */}
       {/* <Select1 /> */}
+      <PageOrder />
     </>
   );
 }
