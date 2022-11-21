@@ -22,11 +22,13 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeUser />} />
         <Route path="/home" element={<HomeUser />} />
+        <Route path="/Takeaway" element={<Takeaway />} />
+        <Route path="/AtRes" element={<Res />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/list" element={<List />} />
         <Route path="/Wait" element={<Wait />} />
         <Route path="/Payment" element={<Payment />} />
-        <Route path="/Takeaway" element={<Takeaway />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
