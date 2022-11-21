@@ -17,7 +17,7 @@ export default function Wait() {
                 <div className="flex justify-center content-center align-center">
                   <img
                     className="w-3/5 "
-                    src="https://cdn-icons-png.flaticon.com/512/1027/1027230.png"
+                    src="https://cdn-icons-png.flaticon.com/512/1027/1027128.png"
                     alt=""
                   />
                 </div>
