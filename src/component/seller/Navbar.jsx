@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <fragment>
       {/* <div className={`flex visible xs:invisible`}> */}
-      <aside className={`h-screen w-44 bg-[#AE2C26] shadow fixed `}>
+      <aside className={`h-screen w-60 bg-[#AE2C26] shadow fixed `}>
         <div className="flex justify-center content-center align-center">
           <img
             className={`w-4/5 cursor-pointer block float-left duration-300`}

@@ -10,9 +10,10 @@ import Payment from "./component/user/Payment";
 import Modal from "./component/user/Modal";
 import Takeaway from "./component/user/Takeaway";
 import Res from "./component/user/Res";
-import Navbar from "./component/seller/Navbar";
-import Order from "./component/seller/Order";
 import PageOrder from "./page/Page-order";
+import PageAddProduct from "./page/Page-add";
+import PageDelete from "./page/Page-delete";
+import PageHistory from "./page/Page-his";
 import NotFound from "./component/user/NotFound";
 // import { Routes, Route } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
@@ -30,6 +31,11 @@ function App() {
         <Route path="/Wait" element={<Wait />} />
         <Route path="/Success" element={<Success />} />
         <Route path="/Payment" element={<Payment />} />
+
+        <Route path="/order" element={<PageOrder />} />
+        <Route path="/addProduct" element={<PageAddProduct />} />
+        <Route path="/deleteProduct" element={<PageDelete />} />
+        <Route path="/history" element={<PageHistory />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
