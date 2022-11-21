@@ -6,7 +6,7 @@ export default function AddProduct() {
       <div className="flex">
         <div className="grid lg:grid-cols-1 md:grid-cols-1 grid-cols-1">
           <div className="">
-            <h3 className="text-2xl mb-5 mt-5 text-[#3C4048]">
+            <h3 className="text-4xl mb-5 mt-5 text-[#3C4048]">
               เพิ่มรายการอาหาร
             </h3>
             <div className="grid grid-rows-1">
@@ -29,7 +29,7 @@ export default function AddProduct() {
                         <span className="text-gray-700">ชื่ออาหาร</span>
                         <input
                           type="text"
-                          className="block w-full px-4 py-1 mt-2 text-white bg-[#AE2C26] rounded-md  border-2  border-[#8D201A] shadow"
+                          className="block w-full px-4 py-1  text-white bg-[#AE2C26] rounded-md  border-2  border-[#8D201A] shadow"
                           required
                         />
                       </label>
@@ -39,7 +39,7 @@ export default function AddProduct() {
                         <span className="">ราคา</span>
                         <input
                           type="number"
-                          className="block w-full px-4 py-1 mt-2 text-white bg-[#AE2C26] border-2  border-[#8D201A] rounded-md shadow"
+                          className="block w-full px-4 py-1 text-white bg-[#AE2C26] border-2  border-[#8D201A] rounded-md shadow"
                           required
                         />
                       </label>
@@ -51,7 +51,7 @@ export default function AddProduct() {
                           name="message"
                           className="
                         block w-full
-                        px-4 mt-2
+                        px-4
                          text-white bg-[#AE2C26] border-2  border-[#8D201A] rounded-md shadow"
                           rows="5"
                           required
