@@ -26,7 +26,7 @@ export default function Menu() {
   return (
     <fragment>
       <div className="mb-4 flex justify-center content-center align-center">
-        <img className="w-[30%]" src="src\assets\PosezFinal.png" alt="" />
+        <img className="w-1/5" src="src\assets\PosezFinal.png" alt="" />
       </div>
       <div className="container">
         <div>
