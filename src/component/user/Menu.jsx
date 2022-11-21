@@ -127,7 +127,7 @@ export default function Menu() {
           </div>
         </div>
 
-        <div className="flex flex justify-center content-center align-center">
+        <div className=" flex justify-center content-center align-center">
           <button
             type="submit"
             className=" m-5 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 mb-3 w-24 h-[2.5rem]"
