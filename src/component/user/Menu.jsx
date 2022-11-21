@@ -31,11 +31,9 @@ export default function Menu() {
         </div>
         <div className="grid grid-rows justify-center content-center align-center">
           <div>
-            <div className="">
-              <h3 className="text-5xl mb-8 mt-5 text-[#3C4048] text-center">
-                เมนู
-              </h3>
-            </div>
+            <h3 className="text-5xl mb-8 mt-5 text-[#3C4048] text-center">
+              เมนู
+            </h3>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
               {cardList.map((card) => (
                 <div className="shadow-lg rounded-lg">
