@@ -38,6 +38,7 @@ function App() {
         <Route path="/history" element={<PageHistory />} />
 
         <Route path="*" element={<NotFound />} />
+        <Route path="modal" element={<Modal />} />
       </Routes>
     </>
   );
