@@ -13,7 +13,7 @@ export default function Takeaway() {
             <h3 className="text-5xl mb-5 text-[#3C4048] text-center">
               รับที่ร้าน
             </h3>
-            <div className="grid gri-drows-2 mt-10 gap-6">
+            <div className="grid grid-rows-2 mt-10 gap-6">
               <button
                 className="my-2 w-[30rem] h-[12rem] bg-[#CE3434] hover:bg-[#8D201A] flex  justify-center items-center rounded-md shadow-xl shadow-gray-300 mb-3"
                 onClick=""
