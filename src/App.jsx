@@ -7,6 +7,7 @@ import List from './component/user/List';
 import Wait from './component/user/Wait';
 import Payment from './component/user/Payment';
 import NotFound from './component/NotFound';
+import Takeaway from './component/user/Takeaway';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/list' element={<List />} />
         <Route path='/Wait' element={<Wait />} />
         <Route path='/Payment' element={<Payment />} />
+        <Route path='/Takeaway' element={<Takeaway />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </>
