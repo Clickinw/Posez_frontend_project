@@ -3,7 +3,7 @@ import "./App.css";
 import "tw-elements";
 // import Logo from "./component/Logo";
 import HomeUser from "./component/user/HomeUser";
-// import Menu from "./component/user/Menu";
+import Menu from "./component/user/Menu";
 // import List from "./component/user/List";
 // import Wait from "./component/user/Wait";
 // import Payment from "./component/user/Payment";
@@ -35,7 +35,8 @@ function App() {
       {/* <Navbar /> */}
       {/* <Order /> */}
       {/* <Select1 /> */}
-      <PageOrder />
+      <Menu />
+      {/* <PageOrder /> */}
       {/* <Login /> */}
     </>
   );
