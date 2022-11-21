@@ -6,8 +6,10 @@ export default function PageOrder() {
   return (
     <fragment>
       <div className="flex">
-        <Navbar />
-        <div className="flex">
+        <div className="pr-80 hidden sm:block">
+          <Navbar />
+        </div>
+        <div className="p-5">
           <Order />
         </div>
       </div>

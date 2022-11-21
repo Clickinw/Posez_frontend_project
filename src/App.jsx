@@ -14,6 +14,7 @@ import HomeUser from "./component/user/HomeUser";
 // import Order from "./component/seller/Order";
 // import Select1 from "./component/Select1";
 import PageOrder from "./page/Page-order";
+// import Login from "./page/";
 
 // import { Routes, Route } from "react-router-dom";
 
@@ -35,6 +36,7 @@ function App() {
       {/* <Order /> */}
       {/* <Select1 /> */}
       <PageOrder />
+      {/* <Login /> */}
     </>
   );
 }

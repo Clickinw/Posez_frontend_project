@@ -6,10 +6,10 @@ export default function PageDelete() {
   return (
     <fragment>
       <div className="flex">
-        <div className="pr-72">
+        <div className="pr-72 hidden sm:block">
           <Navbar />
         </div>
-        <div>
+        <div className="p-5">
           <Delete />
         </div>
       </div>

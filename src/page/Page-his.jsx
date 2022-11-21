@@ -6,10 +6,10 @@ export default function PageHistory() {
   return (
     <fragment>
       <div className="flex">
-        <div className="pr-96">
+        <div className="pr-80 hidden sm:block">
           <Navbar />
         </div>
-        <div>
+        <div className="p-5">
           <History />
         </div>
       </div>

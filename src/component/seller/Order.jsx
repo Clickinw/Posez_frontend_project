@@ -32,7 +32,7 @@ export default function Order() {
             <div className="grid grid-rows-4 gap-6">
               {/* <div className="flex justify-center content-center align-center"> */}
               <div className="rounded-lg bg-[#FCFBF1] w-full h-full shadow-xl shadow-gray-300">
-                <div className="px-10 py-3 text-[#3C4048]">
+                <div className="px-8 py-3 text-[#3C4048]">
                   <div className=" text-xl ">โต๊ะ 1</div>
                   <div className=" mt-1 text-sm border-b-2">{date}</div>
                   <div className="mt-3 grid justify-center content-center align-center text-[#3C4048]">
@@ -53,7 +53,7 @@ export default function Order() {
                       </div>
                     </div>
                   </div>
-                  <div className="grid grid-cols-5 gap-4 text-xl mb-2 border-t-2">
+                  <div className="grid grid-cols-5 gap-4 text-lg mb-2 border-t-2">
                     <div className="mt-2">รายการ</div>
                     <div className="mt-2">จำนวน</div>
                     <div className="mt-2">ตัวเลือก</div>
