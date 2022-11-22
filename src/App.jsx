@@ -18,6 +18,7 @@ import NotFound from "./component/user/NotFound";
 import Login from "./component/seller/Login";
 import Register from "./component/seller/Register";
 import Thx from "./component/user/Thx";
+import Donate from "./component/seller/Donate";
 // import { Routes, Route } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
@@ -41,6 +42,7 @@ function App() {
         <Route path="/deleteProduct" element={<PageDelete />} />
         <Route path="/history" element={<PageHistory />} />
 
+        <Route path="/donate" element={<Donate />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<NotFound />} />
