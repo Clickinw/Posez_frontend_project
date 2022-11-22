@@ -105,7 +105,7 @@ export default function Menu() {
                       <span className=" text-sm text-[#3C4048]">
                         ตัวเลือกเพิ่มเติม
                       </span>
-                      <div className="grid grid-cols-1">
+                      <div className="grid grid-cols-1 w-56">
                         <Select
                           defaultValue={[options[2], options[3]]}
                           isMulti
@@ -116,7 +116,7 @@ export default function Menu() {
                       </div>
                     </div>
                   </div>
-                  <div className="p-1">
+                  <div className="px-6">
                     <label className="mt-2">
                       <span className=" text-sm font-medium text-[#3C4048]">
                         หมายเหตุ
