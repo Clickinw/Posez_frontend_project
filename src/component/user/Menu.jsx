@@ -7,21 +7,23 @@ import axios from 'axios';
 export default function Menu() {
   const [counter, setCounter] = useState(0);
 
-  // const [menu, setMenu] = useState([]);
+  const [menu, setMenu] = useState([]);
 
-  // useEffect(() => {
-  //   async function getmenu() {
-  //     try {
-  //       const menu = await axios.get(`http://localhost:8000/menu`);
-  //       setMenu(menu.data);
-  //     } catch (e) {
-  //       console.error(e);
-  //     }
-  //   }
-  //   getmenu();
-  // }, []);
+  useEffect(() => {
+    async function getmenu() {
+      try {
+        const menu = await axios.get(`http://localhost:8000/menu`);
+        setMenu(menu.data);
+      } catch (e) {
+        console.error(e);
+      }
+    }
+    getmenu();
+  }, []);
 
-  // console.log(menu);
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  console.log(menu);
 
   //increase counter
   const increase = () => {
@@ -34,12 +36,40 @@ export default function Menu() {
   };
 
   const options = [
-    { value: '1', label: 'เล็ก' },
-    { value: '2', label: 'กลาง' },
-    { value: '3', label: 'ใหญ่' },
-    { value: '4', label: 'จัมโบ้' },
+    { value: 'small', label: 'เล็ก' },
+    { value: 'medium', label: 'กลาง' },
+    { value: 'large', label: 'ใหญ่' },
+    { value: 'jumbo', label: 'จัมโบ้' },
     ,
   ];
+
+  const handleChange = (selectedOption) => {
+    setSelectedOption(selectedOption);
+  };
+
+  //create function onclick to send data to backend
+  const onClick = async (e) => {
+    e.preventDefault();
+    const newMenu = {
+      name: e.target.name,
+      price: e.target.price,
+      size: selectedOption.value,
+      image: e.target.image,
+    };
+    try {
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      };
+
+      const body = JSON.stringify(newMenu);
+      const res = await axios.post('/menu', body, config);
+      console.log(res.data);
+    } catch (err) {
+      console.error(err.response.data);
+    }
+  };
 
   return (
     <fragment>
@@ -53,17 +83,17 @@ export default function Menu() {
               เมนู
             </h3>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>
-              {cardList.map((card) => (
+              {menu.map((card) => (
                 <div className='shadow-lg rounded-lg border border-gray-100'>
                   <div className='flex justify-center content-center align-center'>
                     <img
                       className='mt-3 rounded-lg w-[80%] h-[8rem]'
-                      src={card.images}
+                      src={card.image}
                       alt=''
                     />
                   </div>
                   <div className='pt-3 mb-0 grid grid-rows-2 text-center'>
-                    <h5 className='text-xl text-[#3C4048]'>{card.title}</h5>
+                    <h5 className='text-xl text-[#3C4048]'>{card.name}</h5>
                     <h6 className='text-lg text-[#3C4048]'>
                       ราคา: {card.price}
                     </h6>
@@ -128,7 +158,7 @@ export default function Menu() {
                         `}
                       >
                         <Select
-                          defaultValue={[options[2], options[3]]}
+                          defaultValue={[options[3]]}
                           name='options'
                           options={options}
                           className={`w-full text-[#3C4048]`}
@@ -153,6 +183,7 @@ export default function Menu() {
                     <button
                       type='submit'
                       className=' m-5 bg-[#ED7072] hover:bg-[#CE3434] rounded-md shadow-md shadow-gray-300 mb-3 w-24 h-[2rem] text-[#3C4048]'
+                      onClick={onClick}
                     >
                       เพิ่มลงรายการ
                     </button>

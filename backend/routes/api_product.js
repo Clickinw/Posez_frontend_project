@@ -19,6 +19,7 @@ router.post('/', async (req, res) => {
     const menu = await Menu.create({
       name,
       price,
+      image,
     });
     res.status(201).json(menu);
   } catch (err) {
