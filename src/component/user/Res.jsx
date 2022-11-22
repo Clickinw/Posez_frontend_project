@@ -12,7 +12,7 @@ export default function Takeaway() {
         <div className="grid grid-rows justify-center content-center align-center">
           <div>
             <h3 className="text-5xl mb-5 text-[#3C4048] text-center">
-              รับที่ร้าน
+              ทานที่ร้าน
             </h3>
             <div className="grid grid-rows-2 mt-10 gap-6">
               <button

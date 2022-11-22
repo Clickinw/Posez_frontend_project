@@ -16,6 +16,7 @@ import PageDelete from "./page/Page-delete";
 import PageHistory from "./page/Page-his";
 import NotFound from "./component/user/NotFound";
 import Login from "./component/seller/Login";
+import Register from "./component/seller/Register";
 // import { Routes, Route } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
@@ -39,6 +40,7 @@ function App() {
         <Route path="/history" element={<PageHistory />} />
 
         <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
         <Route path="*" element={<NotFound />} />
         <Route path="modal" element={<Modal />} />
       </Routes>
