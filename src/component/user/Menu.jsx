@@ -70,6 +70,16 @@ export default function Menu() {
             <h3 className='text-5xl mb-8 mt-5 text-[#3C4048] text-center'>
               เมนู
             </h3>
+            <select
+              id='countries'
+              class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-32 h-12 p-2.5 mb-6 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+            >
+              <option selected>เลือกโต๊ะ</option>
+              <option value='1'>โต๊ะ 1</option>
+              <option value='2'>โต๊ะ 2</option>
+              <option value='3'>โต๊ะ 3</option>
+              <option value='4'>โต๊ะ 4</option>
+            </select>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>
               {menu.map((card) => (
                 <div className='shadow-lg rounded-lg border border-gray-100'>
