@@ -5,12 +5,23 @@ const Menu = require('../model/menu');
 
 router.post('/', async (req, res) => {
   try {
-    const { name, price } = req.body;
+    const { name, price, size, image } = req.body;
     const menu = await Menu.create({
       name,
       price,
+      size,
+      image,
     });
     res.status(201).json(menu);
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+router.get('/', async (req, res) => {
+  try {
+    const menu = await Menu.find();
+    res.status(200).json(menu);
   } catch (err) {
     console.log(err);
   }
