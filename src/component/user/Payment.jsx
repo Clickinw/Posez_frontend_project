@@ -50,13 +50,15 @@ export default function Payment() {
                     <label for="formFileSm" class="form-label  text-[#3C4048]">
                       โปรดแนบหลักฐานการโอนเงิน
                     </label>
-                    <div class="flex items-center  py-2">
+                    <div class="flex items-center py-2 gap-2">
                       <input
-                        className="form-control appearance-none rounded-md border-2 bg-[#CE3434] bg-clip-padding border-none w-full text-white mr-3 py-1 px-2 leading-tight focus:outline-none shadow-xl shadow-gray-300"
+                        class="block w-full  text-sm border-2  border-[#8D201A] rounded-md text-white
+                        cursor-pointer bg-[#AE2C26] shadowr"
+                        required
                         type="file"
                       />
                       <button
-                        class="flex-shrink-0 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 py-1 px-2 w-[20%] "
+                        class="flex-shrink-0 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 py-1 px-2 w-[4rem] "
                         type="button"
                       >
                         ส่ง
