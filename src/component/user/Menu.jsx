@@ -10,6 +10,8 @@ export default function Menu() {
 
   const [value, setValue] = useState(0);
 
+  const [detail, setDetail] = useState(0);
+
   useEffect(() => {
     async function getmenu() {
       try {
@@ -34,7 +36,6 @@ export default function Menu() {
     setSelectedOption(selectedOption.value);
   };
 
-  //create function onclick to send data to backend
   const onClick = async (e, price, name) => {
     console.log(selectValue);
     try {
@@ -43,6 +44,7 @@ export default function Menu() {
         price: price[0],
         size: selectValue,
         quantity: value,
+        tableid: detail,
       });
       x;
     } catch (e) {
@@ -71,8 +73,9 @@ export default function Menu() {
               เมนู
             </h3>
             <select
-              id='countries'
+              id='table'
               class='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-32 h-12 p-2.5 mb-6 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+              onChange={(e) => setDetail(e.target.value)}
             >
               <option selected>เลือกโต๊ะ</option>
               <option value='1'>โต๊ะ 1</option>

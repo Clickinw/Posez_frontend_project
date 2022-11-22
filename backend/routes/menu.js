@@ -5,7 +5,7 @@ const Menu = require('../model/menu');
 
 router.post('/', async (req, res) => {
   try {
-    const { name, price, size, image } = req.body;
+    const { name, price, image, tableid } = req.body;
     const menu = await Menu.create({
       name,
       price,
