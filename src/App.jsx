@@ -15,6 +15,7 @@ import PageAddProduct from "./page/Page-add";
 import PageDelete from "./page/Page-delete";
 import PageHistory from "./page/Page-his";
 import NotFound from "./component/user/NotFound";
+import Login from "./component/seller/Login";
 // import { Routes, Route } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/deleteProduct" element={<PageDelete />} />
         <Route path="/history" element={<PageHistory />} />
 
+        <Route path="login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
         <Route path="modal" element={<Modal />} />
       </Routes>

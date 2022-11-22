@@ -26,7 +26,7 @@ export default function AddProduct() {
                     </div>
                     <div className="mb-2">
                       <label>
-                        <span className="text-gray-700">ชื่ออาหาร</span>
+                        <span>ชื่ออาหาร</span>
                         <input
                           type="text"
                           className="block w-full px-4 py-1  text-white bg-[#AE2C26] rounded-md  border-2  border-[#8D201A] shadow"

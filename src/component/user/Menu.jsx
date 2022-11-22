@@ -16,11 +16,11 @@ export default function Menu() {
   };
 
   const options = [
-    { value: "ไข่ดาว", label: "ไข่ดาว" },
-    { value: "ไข่เจียว", label: "ไข่เจียว" },
-    { value: "ไข่ต้ม", label: "ไข่ต้ม" },
-    { value: "เพิ่มหมู", label: "เพิ่มหมู" },
-    { value: "เพิ่มเนื้อ", label: "เพิ่มเนื้อ" },
+    { value: "1", label: "เล็ก" },
+    { value: "2", label: "กลาง" },
+    { value: "3", label: "ใหญ่" },
+    { value: "4", label: "จัมโบ้" },
+    ,
   ];
 
   const [high, setHigh] = useState(true);
@@ -38,7 +38,7 @@ export default function Menu() {
             </h3>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
               {cardList.map((card) => (
-                <div className="shadow-lg rounded-lg">
+                <div className="shadow-lg rounded-lg border border-gray-100">
                   <div className="flex justify-center content-center align-center">
                     <img
                       className="mt-3 rounded-lg w-[80%] h-[8rem]"
@@ -102,21 +102,17 @@ export default function Menu() {
                       </button>
                     </div>
                   </div>
-                  <div className="mt-3 grid grid-rows justify-center content-center align-center'">
+                  <div className="mt-3 grid grid-rows justify-center content-center align-center mb-1">
                     <div className="w-full">
                       <span className=" text-sm text-[#3C4048]">
                         ตัวเลือกเพิ่มเติม
                       </span>
                       <div
-                        className={`grid grid-cols-1 w-56 ${high}
+                        className={`grid grid-cols-1 w-56 rounded-md
                         `}
-                        onClick={() => {
-                          setHigh("h-44");
-                        }}
                       >
                         <Select
                           defaultValue={[options[2], options[3]]}
-                          isMulti
                           name="options"
                           options={options}
                           className={`w-full text-[#3C4048]`}
@@ -132,18 +128,26 @@ export default function Menu() {
                       <input
                         type="text"
                         name="text"
-                        className="mb-3 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
+                        className=" px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1 text-[#3C4048]"
                         placeholder="เผ็ด/ไม่เผ็ด"
                       />
                     </label>
                   </div>
+                  <div className=" flex justify-center content-center align-center text-sm">
+                    <button
+                      type="submit"
+                      className=" m-5 bg-[#ED7072] hover:bg-[#CE3434] rounded-md shadow-md shadow-gray-300 mb-3 w-24 h-[2rem] text-[#3C4048]"
+                    >
+                      เพิ่มลงรายการ
+                    </button>
+                  </div>
                 </div>
               ))}
             </div>
-            <div className=" flex justify-center content-center align-center">
+            <div className=" flex justify-center content-center align-center mt-3">
               <button
                 type="submit"
-                className=" m-5 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 mb-3 w-24 h-[2.5rem]"
+                className=" m-5 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[3rem] text-[#3C4048] text-3xl text-center"
               >
                 ส่ง
               </button>
