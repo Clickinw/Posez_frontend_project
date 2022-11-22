@@ -23,6 +23,8 @@ export default function Menu() {
     { value: "เพิ่มเนื้อ", label: "เพิ่มเนื้อ" },
   ];
 
+  const [high, setHigh] = useState(true);
+
   return (
     <fragment>
       <div>
@@ -105,13 +107,19 @@ export default function Menu() {
                       <span className=" text-sm text-[#3C4048]">
                         ตัวเลือกเพิ่มเติม
                       </span>
-                      <div className="grid grid-cols-1 w-56">
+                      <div
+                        className={`grid grid-cols-1 w-56 ${high}
+                        `}
+                        onClick={() => {
+                          setHigh("h-44");
+                        }}
+                      >
                         <Select
                           defaultValue={[options[2], options[3]]}
                           isMulti
                           name="options"
                           options={options}
-                          className=" w-full text-[#3C4048]"
+                          className={`w-full text-[#3C4048]`}
                         />
                       </div>
                     </div>
