@@ -31,13 +31,7 @@ export default function Delete() {
                       <span className="text-center">
                         <button
                           type="submit"
-                          className=" bg-[#F5B449] hover:bg-gray-200  rounded-md shadow-xl shadow-gray-300 w-12 h-[1.5rem] mb-2 mx-2"
-                        >
-                          แก้ไข
-                        </button>
-                        <button
-                          type="submit"
-                          className=" bg-[#CE3434]  hover:bg-[#ED7072] rounded-md shadow-xl shadow-gray-300  w-12 h-[1.5rem] mb-2 mx-2"
+                          className=" bg-[#CE3434]  hover:bg-[#ED7072] rounded-md shadow-xl shadow-gray-300  w-12 h-[1.5rem] mb-2 mx-2 text-white"
                         >
                           ลบ
                         </button>
