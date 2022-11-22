@@ -37,8 +37,6 @@ export default function Delete() {
                         </button>
                         <button
                           type='submit'
-                          className=' bg-[#CE3434]  hover:bg-[#ED7072] rounded-md shadow-xl shadow-gray-300  w-12 h-[1.5rem] mb-2 mx-2'
-                          type='submit'
                           className=' bg-[#CE3434]  hover:bg-[#ED7072] rounded-md shadow-xl shadow-gray-300  w-12 h-[1.5rem] mb-2 mx-2 text-white'
                         >
                           ลบ
