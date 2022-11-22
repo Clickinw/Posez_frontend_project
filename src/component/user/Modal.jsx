@@ -21,7 +21,7 @@ export default function Modal() {
                 <div className="flex items-center justify-center p-5 border-b border-solid border-slate-200 rounded-t text-[#3C4048]">
                   <h3 className="text-3xl">กรุณากรอกรายละเอียด</h3>
                   <button
-                    className="p-1 pl-20 ml-auto bg-transparent border-0 text-[#3C4048]float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                    className="p-1 pl-20 ml-auto bg-transparent border-0 text-[#3C4048] float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => setShowModal(false)}
                   >
                     {/* <span className="bg-transparent text-black opacity-50 h-6 w-6 text-2xl block outline-none focus:outline-none">
