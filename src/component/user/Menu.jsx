@@ -16,11 +16,11 @@ export default function Menu() {
   };
 
   const options = [
-    { value: "ไข่ดาว", label: "ไข่ดาว" },
-    { value: "ไข่เจียว", label: "ไข่เจียว" },
-    { value: "ไข่ต้ม", label: "ไข่ต้ม" },
-    { value: "เพิ่มหมู", label: "เพิ่มหมู" },
-    { value: "เพิ่มเนื้อ", label: "เพิ่มเนื้อ" },
+    { value: "1", label: "เล็ก" },
+    { value: "2", label: "กลาง" },
+    { value: "3", label: "ใหญ่" },
+    { value: "4", label: "จัมโบ้" },
+    ,
   ];
 
   const [high, setHigh] = useState(true);
@@ -102,7 +102,7 @@ export default function Menu() {
                       </button>
                     </div>
                   </div>
-                  <div className="mt-3 grid grid-rows justify-center content-center align-center'">
+                  <div className="mt-3 grid grid-rows justify-center content-center align-center mb-1">
                     <div className="w-full">
                       <span className=" text-sm text-[#3C4048]">
                         ตัวเลือกเพิ่มเติม
@@ -110,13 +110,9 @@ export default function Menu() {
                       <div
                         className={`grid grid-cols-1 w-56 ${high}
                         `}
-                        onClick={() => {
-                          setHigh("h-44");
-                        }}
                       >
                         <Select
                           defaultValue={[options[2], options[3]]}
-                          isMulti
                           name="options"
                           options={options}
                           className={`w-full text-[#3C4048]`}
