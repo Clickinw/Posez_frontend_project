@@ -18,25 +18,14 @@ export default function Success() {
                 <div className="flex justify-center content-center align-center">
                   <img
                     className="w-3/5 "
-                    src="https://cdn-icons-png.flaticon.com/512/190/190411.png"
+                    src="https://cdn-icons-png.flaticon.com/512/2279/2279408.png"
                     alt=""
                   />
                 </div>
                 <div className="flex justify-center content-center align-center mt-3">
-                  <div className="text-4xl mt-3 text-[#3C4048] ">เสร็จแล้ว</div>
+                  <div className="text-4xl mt-3 text-[#3C4048] ">ขอบคุณ</div>
                 </div>
               </div>
-            </div>
-
-            <div className="mt-3 flex  justify-center items-center">
-              <Link to="/payment">
-                <button
-                  type="submit"
-                  className=" m-5 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[3rem] text-[#3C4048] text-3xl text-center"
-                >
-                  เช็คบิล
-                </button>
-              </Link>
             </div>
           </div>
         </div>

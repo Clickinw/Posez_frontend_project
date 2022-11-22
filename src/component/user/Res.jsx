@@ -1,5 +1,6 @@
 import React from "react";
 import { Select } from "@mantine/core";
+import { Link } from "react-router-dom";
 
 export default function Takeaway() {
   return (
@@ -15,34 +16,36 @@ export default function Takeaway() {
               ทานที่ร้าน
             </h3>
             <div className="grid grid-rows-2 mt-10 gap-6">
-              <button
-                className="my-2 w-[30rem] h-[12rem] bg-[#CE3434] hover:bg-[#8D201A] flex  justify-center items-center rounded-md shadow-xl shadow-gray-300 mb-3"
-                onClick=""
-                type="submit"
-              >
-                <div className="bg-white rounded-full w-[3.75rem] h-[3.75rem] flex justify-center itmes-center">
-                  <div className="mt-[0.4rem]">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-receipt"
-                      width="45"
-                      height="45"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="#000000"
-                      fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2m4 -14h6m-6 4h6m-2 4h2" />
-                    </svg>
+              <Link to="/menu">
+                <button
+                  className="my-2 w-[30rem] h-[12rem] bg-[#CE3434] hover:bg-[#8D201A] flex  justify-center items-center rounded-md shadow-xl shadow-gray-300 mb-3"
+                  onClick=""
+                  type="submit"
+                >
+                  <div className="bg-white rounded-full w-[3.75rem] h-[3.75rem] flex justify-center itmes-center">
+                    <div className="mt-[0.4rem]">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-receipt"
+                        width="45"
+                        height="45"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#000000"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2m4 -14h6m-6 4h6m-2 4h2" />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-                <div className="pl-2 text-[2rem] text-white">
-                  พร้อมสั่งอาหาร
-                </div>
-              </button>
+                  <div className="pl-2 text-[2rem] text-white">
+                    พร้อมสั่งอาหาร
+                  </div>
+                </button>
+              </Link>
 
               <button
                 className="my-2 w-[30rem] h-[12rem] bg-[#CE3434] hover:bg-[#8D201A] flex  justify-center items-center rounded-md shadow-xl shadow-gray-300 mb-3"
@@ -72,12 +75,14 @@ export default function Takeaway() {
                       { value: "18.30-19.00", label: "18.30-19.00" },
                     ]}
                   />
-                  <button
-                    type="submit"
-                    className=" bg-[#F5B449] hover:bg-[#EBA78A] rounded-md  w-[5rem] h-[2rem] text-[1rem]  text-[#3C4048] mb-5"
-                  >
-                    ยืนยัน
-                  </button>
+                  <Link to="/menu">
+                    <button
+                      type="submit"
+                      className=" bg-[#F5B449] hover:bg-[#EBA78A] rounded-md  w-[5rem] h-[2rem] text-[1rem]  text-[#3C4048] mb-5"
+                    >
+                      ยืนยัน
+                    </button>
+                  </Link>
                 </div>
               </button>
             </div>

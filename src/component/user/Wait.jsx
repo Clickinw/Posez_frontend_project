@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Wait() {
   return (
@@ -27,6 +28,17 @@ export default function Wait() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="mt-3 flex  justify-center items-center">
+              <Link to="/success">
+                <button
+                  type="submit"
+                  className=" m-5 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[3rem] text-[#3C4048] text-3xl text-center"
+                >
+                  ต่อไป
+                </button>
+              </Link>
             </div>
           </div>
         </div>

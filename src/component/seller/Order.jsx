@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import data from "../../api/data";
 import { Select } from "@mantine/core";
 import { FiCheckCircle } from "react-icons/Fi";
+import { Link } from "react-router-dom";
 
 export default function Order() {
   const options = [
@@ -89,19 +90,21 @@ export default function Order() {
                   </sapn>
                   <span className="text-start m-2"> xxx บาท</span>
                 </div>
-                <div className="flex justify-center content-center align-center">
-                  <button
-                    type="submit"
-                    className="m-3 bg-[#F5B449] hover:bg-[#CE3434] rounded-full shadow-xl shadow-gray-300 mb-3 w-2/5 h-[2rem]"
-                  >
-                    <div className="flex justify-center itmes-center">
-                      <div className="mt-1 mr-2">
-                        <FiCheckCircle />
+                <Link to="/history">
+                  <div className="flex justify-center content-center align-center">
+                    <button
+                      type="submit"
+                      className="m-3 bg-[#F5B449] hover:bg-[#CE3434] rounded-full shadow-xl shadow-gray-300 mb-3 w-2/5 h-[2rem]"
+                    >
+                      <div className="flex justify-center itmes-center">
+                        <div className="mt-1 mr-2">
+                          <FiCheckCircle />
+                        </div>
+                        <div>สำเร็จ</div>
                       </div>
-                      <div>สำเร็จ</div>
-                    </div>
-                  </button>
-                </div>
+                    </button>
+                  </div>
+                </Link>
               </div>
 
               <div className="rounded-lg bg-[#FCFBF1] w-full h-full shadow-xl shadow-gray-300">
@@ -162,19 +165,21 @@ export default function Order() {
                   </sapn>
                   <span className="text-start m-2"> xxx บาท</span>
                 </div>
-                <div className="flex justify-center content-center align-center">
-                  <button
-                    type="submit"
-                    className="m-3 bg-[#F5B449] hover:bg-[#CE3434] rounded-full shadow-xl shadow-gray-300 mb-3 w-2/5 h-[2rem]"
-                  >
-                    <div className="flex justify-center itmes-center">
-                      <div className="mt-1 mr-2">
-                        <FiCheckCircle />
+                <Link to="/history">
+                  <div className="flex justify-center content-center align-center">
+                    <button
+                      type="submit"
+                      className="m-3 bg-[#F5B449] hover:bg-[#CE3434] rounded-full shadow-xl shadow-gray-300 mb-3 w-2/5 h-[2rem]"
+                    >
+                      <div className="flex justify-center itmes-center">
+                        <div className="mt-1 mr-2">
+                          <FiCheckCircle />
+                        </div>
+                        <div>สำเร็จ</div>
                       </div>
-                      <div>สำเร็จ</div>
-                    </div>
-                  </button>
-                </div>
+                    </button>
+                  </div>
+                </Link>
               </div>
 
               <div className="rounded-lg bg-[#FCFBF1] w-full h-full shadow-xl shadow-gray-300">
@@ -235,19 +240,21 @@ export default function Order() {
                   </sapn>
                   <span className="text-start m-2"> xxx บาท</span>
                 </div>
-                <div className="flex justify-center content-center align-center">
-                  <button
-                    type="submit"
-                    className="m-3 bg-[#F5B449] hover:bg-[#CE3434] rounded-full shadow-xl shadow-gray-300 mb-3 w-2/5 h-[2rem]"
-                  >
-                    <div className="flex justify-center itmes-center">
-                      <div className="mt-1 mr-2">
-                        <FiCheckCircle />
+                <Link to="/history">
+                  <div className="flex justify-center content-center align-center">
+                    <button
+                      type="submit"
+                      className="m-3 bg-[#F5B449] hover:bg-[#CE3434] rounded-full shadow-xl shadow-gray-300 mb-3 w-2/5 h-[2rem]"
+                    >
+                      <div className="flex justify-center itmes-center">
+                        <div className="mt-1 mr-2">
+                          <FiCheckCircle />
+                        </div>
+                        <div>สำเร็จ</div>
                       </div>
-                      <div>สำเร็จ</div>
-                    </div>
-                  </button>
-                </div>
+                    </button>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

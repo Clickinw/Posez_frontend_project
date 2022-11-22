@@ -1,5 +1,6 @@
 import React from "react";
 import data from "../../api/data";
+import { Link } from "react-router-dom";
 
 export default function List() {
   return (
@@ -47,18 +48,23 @@ export default function List() {
           </div>
 
           <div className="mt-3 flex  justify-center items-center">
-            <button
-              type="submit"
-              className="m-3 bg-[#ED7072] hover:bg-[#EBA78A] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[2rem] "
-            >
-              ย้อนกลับ
-            </button>
-            <button
-              type="submit"
-              className="m-3 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[2rem]"
-            >
-              ยืนยันออเดอร์
-            </button>
+            <Link to="/menu">
+              <button
+                type="submit"
+                className="m-3 bg-[#ED7072] hover:bg-[#EBA78A] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[2rem] "
+              >
+                ย้อนกลับ
+              </button>
+            </Link>
+
+            <Link to="/wait">
+              <button
+                type="submit"
+                className="m-3 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[2rem]"
+              >
+                ยืนยันออเดอร์
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -47,8 +48,8 @@ export default function Login() {
                       </div>
 
                       <input
-                        placeholder="ชื่อผู้ใช้งาน"
-                        type="text"
+                        placeholder="อีเมล"
+                        type="email"
                         className="block w-full p-2 text-[#3C4048] bg-white rounded-md  border-2 border-[#8D201A] shadow-lg  shadow-gray-400 text-base font-extralight"
                       ></input>
                     </div>
@@ -80,7 +81,7 @@ export default function Login() {
 
                       <input
                         placeholder="รหัสผ่าน"
-                        type="text"
+                        type="password"
                         className="block w-full p-2 text-[#3C4048] bg-white rounded-md  border-2 border-[#8D201A] shadow-lg  shadow-gray-400  text-base font-extralight"
                       ></input>
                     </div>
@@ -88,16 +89,20 @@ export default function Login() {
                 </div>
 
                 <div className="flex  justify-center items-center">
-                  <button
-                    type="submit"
-                    className="m-3 bg-[#CE3434] hover:bg-[#8D201A] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[3rem] text-white"
-                  >
-                    เข้าสู่ระบบ
-                  </button>
+                  <Link to="/order">
+                    <button
+                      type="submit"
+                      className="m-3 bg-[#CE3434] hover:bg-[#8D201A] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[3rem] text-white"
+                    >
+                      เข้าสู่ระบบ
+                    </button>
+                  </Link>
                 </div>
                 <div className="flex justify-center content-center align-center gap-2 text-[#3C4048] mt-3">
                   <span>หากยังไม่มีบัญชี</span>
-                  <a href="">ลงทะเบียนที่นี่</a>
+                  <Link to="/register" className="text-[#8D201A]">
+                    ลงทะเบียนที่นี่
+                  </Link>
                 </div>
               </form>
             </div>

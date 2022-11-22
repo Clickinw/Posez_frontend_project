@@ -17,6 +17,7 @@ import PageHistory from "./page/Page-his";
 import NotFound from "./component/user/NotFound";
 import Login from "./component/seller/Login";
 import Register from "./component/seller/Register";
+import Thx from "./component/user/Thx";
 // import { Routes, Route } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
@@ -33,14 +34,15 @@ function App() {
         <Route path="/Wait" element={<Wait />} />
         <Route path="/Success" element={<Success />} />
         <Route path="/Payment" element={<Payment />} />
+        <Route path="/Thx" element={<Thx />} />
 
         <Route path="/order" element={<PageOrder />} />
         <Route path="/addProduct" element={<PageAddProduct />} />
         <Route path="/deleteProduct" element={<PageDelete />} />
         <Route path="/history" element={<PageHistory />} />
 
-        <Route path="login" element={<Login />} />
-        <Route path="register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="*" element={<NotFound />} />
         <Route path="modal" element={<Modal />} />
       </Routes>
