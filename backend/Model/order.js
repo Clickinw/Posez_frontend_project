@@ -3,11 +3,10 @@
 const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({
+  tableid: { type: Number, required: true },
   name: { type: String, required: true },
-  images: { type: String, required: true },
   size: { type: String, required: true },
   quantity: { type: Number, required: true },
-  total: { type: Number, required: true },
   price: { type: Number, required: true },
 });
 

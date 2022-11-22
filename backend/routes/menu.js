@@ -10,6 +10,7 @@ router.post('/', async (req, res) => {
       name,
       price,
       image,
+      tableid,
     });
     res.status(201).json(menu);
   } catch (err) {
