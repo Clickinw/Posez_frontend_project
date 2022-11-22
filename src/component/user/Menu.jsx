@@ -96,8 +96,8 @@ export default function Menu() {
                       ราคา: {card.price}
                     </h6>
                   </div>
-                  <div className='grid grid-cols-3 gap-1 '>
-                    <div class='py-1 border-2 border-neutral-100 shadow-inner rounded-lg flex justify-center content-center align-center'>
+                  <div className='grid grid-cols gap-1 mt-1'>
+                    <div class='flex justify-center content-center align-center'>
                       <span className='text-[#3C4048] text-center'>
                         <input
                           min={0}
@@ -106,19 +106,18 @@ export default function Menu() {
                           class='
         form-control
         block
-        w-24
+        w-20
         px-3
         py-1.5
         text-base
-        font-normal
-        text-gray-700
+        text-[#3C4048]
         bg-white bg-clip-padding
         border border-solid border-gray-300
-        rounded
+        rounded-md
         transition
         ease-in-out
         m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+        focus:text-[#3C4048] focus:bg-white focus:border-blue-600 focus:outline-none
       '
                           id='quantity'
                           placeholder='Number input'
@@ -135,7 +134,10 @@ export default function Menu() {
                         className={`grid grid-cols-1 w-56 rounded-md
                         `}
                       >
-                        <select onChange={x}>
+                        <select
+                          className='border-2 rounded-md text-[#3C4048]'
+                          onChange={x}
+                        >
                           <option value=''>เลือก size</option>
                           {options.map((option) => (
                             <option value={option}>{option}</option>
