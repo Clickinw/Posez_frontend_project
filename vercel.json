@@ -1,0 +1,9 @@
+{
+    "version": "1.0.0",
+    "build": [
+        {
+            "src": "app.jsx",
+            "use" "@now/node"
+        }
+    ]
+}
