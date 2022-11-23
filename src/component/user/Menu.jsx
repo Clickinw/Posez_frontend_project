@@ -3,6 +3,7 @@ import cardList from '../../api/data';
 import Select from 'react-select';
 import { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function Menu() {
   const [menu, setMenu] = useState([]);
@@ -175,12 +176,14 @@ export default function Menu() {
               ))}
             </div>
             <div className=' flex justify-center content-center align-center mt-3'>
-              <button
-                type='submit'
-                className=' m-5 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[3rem] text-[#3C4048] text-3xl text-center'
-              >
-                ส่ง
-              </button>
+              <Link to='/list'>
+                <button
+                  type='submit'
+                  className=' m-5 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[3rem] text-[#3C4048] text-3xl text-center'
+                >
+                  ส่ง
+                </button>
+              </Link>
             </div>
           </div>
         </div>

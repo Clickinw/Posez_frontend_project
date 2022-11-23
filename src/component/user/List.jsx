@@ -89,6 +89,24 @@ export default function List() {
             >
               ยืนยันออเดอร์
             </button>
+          <div className="mt-3 flex  justify-center items-center">
+            <Link to="/menu">
+              <button
+                type="submit"
+                className="m-3 bg-[#ED7072] hover:bg-[#EBA78A] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[2rem] "
+              >
+                ย้อนกลับ
+              </button>
+            </Link>
+
+            <Link to="/wait">
+              <button
+                type="submit"
+                className="m-3 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 mb-3 w-32 h-[2rem]"
+              >
+                ยืนยันออเดอร์
+              </button>
+            </Link>
           </div>
         </div>
       </div>

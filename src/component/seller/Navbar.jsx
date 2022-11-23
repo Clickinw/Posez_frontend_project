@@ -6,15 +6,36 @@ import { BiTimer } from "react-icons/bi";
 import { CgPlayListAdd } from "react-icons/Cg";
 import { AiOutlineDelete } from "react-icons/Ai";
 import { MdOutlineLogout } from "react-icons/Md";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(true);
   const Menus = [
-    { title: "ออเดอร์", icon: <GiCampCookingPot /> },
-    { title: "ประวัติออเดอร์", icon: <BiTimer /> },
-    { title: "เพิ่มอาหาร", icon: <CgPlayListAdd /> },
-    { title: "ลบอาหาร", icon: <AiOutlineDelete /> },
-    { title: "ออกจากระบบ", icon: <MdOutlineLogout /> },
+    {
+      title: "ออเดอร์",
+      icon: <GiCampCookingPot />,
+      Link: "/order",
+    },
+    {
+      title: "ประวัติออเดอร์",
+      icon: <BiTimer />,
+      Link: "/history",
+    },
+    {
+      title: "เพิ่มอาหาร",
+      icon: <CgPlayListAdd />,
+      Link: "/addProduct",
+    },
+    {
+      title: "ลบอาหาร",
+      icon: <AiOutlineDelete />,
+      Link: "/deleteProduct",
+    },
+    {
+      title: "ออกจากระบบ",
+      icon: <MdOutlineLogout />,
+      Link: "/login",
+    },
   ];
   return (
     <fragment>
@@ -43,17 +64,19 @@ export default function Navbar() {
         <ul className="pt-3">
           {Menus.map((menu, index) => (
             <>
-              <li
-                key={index}
-                className="text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-[#8D201A] rounded-md mt-2 border-b"
-              >
-                <span className="text-lg block">
-                  {menu.icon ? menu.icon : <RiDashboardFill />}
-                </span>
-                <span className={`text-base font-medium flex-1`}>
-                  {menu.title}
-                </span>
-              </li>
+              <Link to={`${menu.Link}`}>
+                <li
+                  key={index}
+                  className="text-white text-sm flex items-center gap-x-4 cursor-pointer p-2 hover:bg-[#8D201A] rounded-md mt-2 border-b"
+                >
+                  <span className="text-lg block">
+                    {menu.icon ? menu.icon : <RiDashboardFill />}
+                  </span>
+                  <span className={`text-base font-medium flex-1`}>
+                    {menu.title}
+                  </span>
+                </li>
+              </Link>
             </>
           ))}
         </ul>

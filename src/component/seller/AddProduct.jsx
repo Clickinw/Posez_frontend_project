@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function AddProduct() {
   return (
@@ -59,14 +60,17 @@ export default function AddProduct() {
                       </label>
                     </div>
 
-                    <div className="flex justify-end content-end align-end mb-2">
-                      <button
-                        type="submit"
-                        className=" m-5 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 w-1/4 h-[2rem]  text-[#3C4048]"
-                      >
-                        ส่ง
-                      </button>
-                    </div>
+                    <Link to="/deleteProduct">
+                      <div className="flex justify-end content-end align-end mb-2">
+                        <button
+                          type="submit"
+                          className=" m-5 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 w-1/4 h-[2rem]  text-[#3C4048]"
+                        >
+                          ส่ง
+                        </button>
+                      </div>
+                    </Link>
+
                     <div></div>
                   </form>
                 </div>

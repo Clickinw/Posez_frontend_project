@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Payment() {
   return (
@@ -57,12 +58,14 @@ export default function Payment() {
                         required
                         type="file"
                       />
-                      <button
-                        class="flex-shrink-0 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 py-1 px-2 w-[4rem] "
-                        type="button"
-                      >
-                        ส่ง
-                      </button>
+                      <Link to="/Thx">
+                        <button
+                          class="flex-shrink-0 bg-[#F5B449] hover:bg-[#CE3434] rounded-md shadow-xl shadow-gray-300 py-1 px-2 w-[4rem] "
+                          type="button"
+                        >
+                          ส่ง
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
