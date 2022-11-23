@@ -168,9 +168,7 @@ export default function Order() {
                       className='m-3 bg-[#F5B449] hover:bg-[#CE3434] rounded-full shadow-xl shadow-gray-300 mb-3 w-2/5 h-[2rem]'
                     >
                       <div className='flex justify-center itmes-center'>
-                        <div className='mt-1 mr-2'>
-                          <FiCheckCircle />
-                        </div>
+                        <div className='mt-1 mr-2'></div>
                         <div>สำเร็จ</div>
                       </div>
                     </button>
